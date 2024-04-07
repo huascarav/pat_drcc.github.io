@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Saúde & Bem-Estar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="logo-clinica.png" alt="Logo da Clínica" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li>
+                        <a href="javascript:void(0)" class="dropbtn" onclick="toggleDropdown()">Serviços &#9662;</a>
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="#atendimento-medico">Atendimento Médico</a>
+                            <a href="#exames">Exames Laboratoriais e de Imagem</a>
+                            <a href="#nutricao">Aconselhamento Nutricional</a>
+                        </div>
+                    </li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <a href="#contato" class="btn btn-primary">Agende uma Consulta</a>
+        </div>
+    </header>
+
+    <div class="hero">
+        <img src="banner-clinica.jpg" alt="Banner da Clínica" class="hero-image">
+        <div class="hero-text">
+            <h1>Bem-vindo à Clínica Saúde & Bem-Estar</h1>
+            <p>Comprometidos com o seu bem-estar e saúde.</p>
+            <a href="#servicos" class="btn btn-secondary">Conheça Nossos Serviços</a>
+        </div>
+    </div>
+
+    <!-- Seções Sobre, Serviços e Contato aqui -->
+
+    <script src="script.js"></script>
+</body>
+</html>
