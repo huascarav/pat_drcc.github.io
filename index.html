@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clínica Saúde & Bem-Estar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <img src="logo-clinica.png" alt="Logo da Clínica" class="logo">
-            <nav>
+        <div class="container header-container">
+            <img src="logo-clinica.png" alt="Logo da Clínica" class="logo"> <!-- Substitua pelo caminho da sua imagem -->
+            <nav class="navbar">
                 <ul>
                     <li><a href="#">Início</a></li>
-                    <li>
-                        <a href="javascript:void(0)" class="dropbtn" onclick="toggleDropdown()">Serviços &#9662;</a>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Serviços &#9662;</a>
                         <div class="dropdown-content" id="myDropdown">
                             <a href="#atendimento-medico">Atendimento Médico</a>
                             <a href="#exames">Exames Laboratoriais e de Imagem</a>
@@ -30,7 +31,7 @@
     </header>
 
     <div class="hero">
-        <img src="banner-clinica.jpg" alt="Banner da Clínica" class="hero-image">
+        <img src="banner-clinica.jpg" alt="Banner da Clínica" class="hero-image"> <!-- Substitua pelo caminho da sua imagem -->
         <div class="hero-text">
             <h1>Bem-vindo à Clínica Saúde & Bem-Estar</h1>
             <p>Comprometidos com o seu bem-estar e saúde.</p>
@@ -38,7 +39,44 @@
         </div>
     </div>
 
-    <!-- Seções Sobre, Serviços e Contato aqui -->
+    <section id="sobre" class="sobre-clinica">
+        <div class="container">
+            <h2>Sobre a Clínica</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui venenatis dignissim. Aenean vitae metus in sem faucibus venenatis et sed enim.</p>
+            <img src="clinica-interior.jpg" alt="Interior da Clínica" style="width:100%; margin-top:20px;"> <!-- Substitua pelo caminho da sua imagem -->
+        </div>
+    </section>
+
+    <section id="servicos" class="servicos">
+        <div class="container">
+            <h2>Serviços Oferecidos</h2>
+            <div class="servico-item">
+                <img src="icone-atendimento.png" alt="Atendimento Médico" class="servico-icon"> <!-- Substitua pelo caminho da sua imagem -->
+                <h3>Atendimento Médico</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <!-- Repita para outros serviços, substituindo os ícones e textos conforme necessário -->
+        </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2>Contato e Localização</h2>
+            <p>Preencha o formulário abaixo ou nos faça uma visita.</p>
+            <form>
+                <input type="text" placeholder="Seu nome">
+                <input type="email" placeholder="Seu email">
+                <textarea placeholder="Sua mensagem"></textarea>
+                <button type="submit" class="btn">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Clínica Saúde & Bem-Estar. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
