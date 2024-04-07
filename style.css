@@ -1,0 +1,48 @@
+/* Estilos prévios aqui */
+
+.logo {
+    height: 50px; /* Ajuste conforme necessário */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropbtn:hover .dropdown-content {display: block;}
+.dropbtn:focus .dropdown-content {display: block;}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    opacity: 0.7; /* Ajuste a opacidade conforme necessário */
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/* Adicione mais estilos conforme necessário */
